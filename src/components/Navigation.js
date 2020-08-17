@@ -1,20 +1,21 @@
 import React from 'react';
+import Link from './Link';
 
 const Navigation = () => {
   return (
     <div className="ui secondary pointing menu">
-      <a className="item" href="/">
+      <Link className="item" href="/">
         Home
-      </a>
-      <a className="item" href="/foo">
+      </Link>
+      <Link className="item" href="/foo">
         Foo
-      </a>
-      <a className="item" href="/bar">
+      </Link>
+      <Link className="item" href="/bar">
         Bar
-      </a>
-      <a className="item" href="/baz">
+      </Link>
+      <Link className="item" href="/baz">
         Baz
-      </a>
+      </Link>
     </div>
   );
 };
