@@ -1,12 +1,22 @@
 import React from 'react';
 import Component from './Component';
+import Route from './Route';
 
 const App = () => {
   return (
     <div className="ui segment">
-      <Component color="red">Component #1</Component>
-      <Component color="blue">Component #2</Component>
-      <Component color="green">Component #3</Component>
+      <Route path="/">
+        <Component>Home</Component>
+      </Route>
+      <Route path="/foo">
+        <Component color="red">Foo</Component>
+      </Route>
+      <Route path="/bar">
+        <Component color="blue">Bar</Component>
+      </Route>
+      <Route path="/baz">
+        <Component color="green">Baz</Component>
+      </Route>
     </div>
   );
 };
